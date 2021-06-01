@@ -91,7 +91,7 @@ const Footer = () => {
       <footer className="footer">
         <Container fluid>
           <Grid stackable columns={2}>
-            <Grid.Column>
+            <Grid.Column width={9}>
               <div className="footer-part-1">
                 <img
                   className="footer_image"
@@ -112,7 +112,7 @@ const Footer = () => {
               </div>
             </Grid.Column>
 
-            <Grid.Column>
+            <Grid.Column width={7}>
               <div className="footer-part-2">
                 <p>copyright @ 2020 AskePro</p>
                 <div className="bottom-button">

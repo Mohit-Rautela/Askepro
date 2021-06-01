@@ -37,9 +37,9 @@ return (
       <Menu.Item as='a'  className={value==='query' ? active : ""}>
       <Link to='/admin/query'><img src={process.env.PUBLIC_URL + '/Assets/images/mail.svg'}/></Link>
       </Menu.Item>
-      <Menu.Item as='a'  className={value==='help' ? active : ""}>
+      {/* <Menu.Item as='a'  className={value==='help' ? active : ""}>
       <Link to='/admin/query'><img src={process.env.PUBLIC_URL + '/Assets/images/help-circle.svg'}/></Link>
-      </Menu.Item>
+      </Menu.Item> */}
       
     </div>
     );

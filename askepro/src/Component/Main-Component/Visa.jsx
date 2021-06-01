@@ -63,7 +63,7 @@ const Visa = () => {
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer 
           </p>
 
-          <Grid stackable columns={4} only="computer">
+          <Grid stackable columns={4}>
             <Grid.Row>
             
             { services && services.map((d) => {

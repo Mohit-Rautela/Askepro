@@ -75,9 +75,11 @@ const handleReject= async (requestId,bool)=>{
 
   return (
     <>
-      <Button onClick={() => dispatch({ type: "open", size: "small" })}>
+      <div className="verify_btn">
+      <button class="same-btn" onClick={() => dispatch({ type: "open", size: "small" })}>
         Verify  
-      </Button>
+      </button>
+      </div>
       <Modal
         size={size}
         open={open}

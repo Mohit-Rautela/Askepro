@@ -239,13 +239,10 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  img {
-    width: 62.9px;
-    height: 63px;
-  }
+
   p {
     font-family: Open Sans;
-    font-size: clamp(24px);
+    font-size: 24px;
     font-weight: normal;
     padding-left: 1rem;
     line-height: 1.38;
@@ -393,7 +390,7 @@ body {
     background: #fff;
     margin-bottom: 90px;
     position: relative;
-    height: 318px;
+
     &:hover {
       /* outline: ; */
       box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
@@ -635,7 +632,7 @@ body {
     line-height: 1.38;
     color: #fff;
     left: 0;
-    width: 592px;
+    width: 60%;
   }
   h1 {
     @include banner_heading;
@@ -659,7 +656,7 @@ body {
     }
   }
   p {
-    width: 50rem;
+    width: 70%;
     margin: 0 auto;
     text-align: left;
     font-family: Open Sans;
