@@ -136,7 +136,7 @@ const handleReject= async (requestId,bool)=>{
             {request.docs.map((ele)=><div className="doc_inner">
               <img src={process.env.PUBLIC_URL + "/Assets/images/point.png"} />
               <p> {ele.name} </p>
-             <p><Button onClick={()=>generateLink(ele.key)}>Download</Button></p> 
+             <Button basic color='black' onClick={()=>generateLink(ele.key)} style={{margin:'5px 0'}}>Download</Button>
             </div>
             )}
           </div>
