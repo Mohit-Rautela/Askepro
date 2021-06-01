@@ -27,7 +27,7 @@ const Accept = (id) => {
     //   'time': msg
     // }
     const url = `${process.env.REACT_APP_BASE_URL}/admin/appointment/${appId}`
-    console.log(url)
+  
     const resu = await fetch(url, {
         method: 'PUT',
         headers: {

@@ -37,7 +37,7 @@ const FAQ_Modal_Edit = (faq) => {
       title: faqTitle?faqTitle:faq.ques,
       description: description?description: faq.ans,
     };
-    console.log(jsonData);
+  
     const result = await (
       await fetch(url, {
         method: "PUT",

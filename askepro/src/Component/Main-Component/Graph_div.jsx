@@ -23,7 +23,7 @@ const Graph_div = (graph) => {
   const [frequency, setfrequency] = React.useState("Daily");
   const [dates, setDate] = React.useState([]);
   const [data, setData] = React.useState(graph.data);
-  console.log(service_url);
+
   React.useEffect(() => {
     getServices();
   }, []);
@@ -41,7 +41,7 @@ const Graph_div = (graph) => {
     setDate(date);
     setServices(serviceData);
   };
-  console.log(frequency, forService, forMonth, forYear, forData)
+
 
   const hamdleGo = async () => {
     let graphData
@@ -65,7 +65,6 @@ return}
   }
   if (!services)
     return (<></>)
-    console.log((frequency === "Daily")&&(forData==="Application")&&(forService==="All Service") );
   return (
     <>
       <div className="revenue_data">

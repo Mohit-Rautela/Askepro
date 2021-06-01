@@ -45,7 +45,7 @@ const ToggleNav = () => {
       })
     ).json();
     user = user.data;
-    console.log(user);
+ 
     if (user && user.isAdmin) {
       setisAdmin(true);
     }
@@ -57,7 +57,7 @@ const ToggleNav = () => {
     history.push("/");
     window.location.reload(false);
   }
-  console.log(name);
+
 
   return (
     <>

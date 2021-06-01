@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Grid } from "semantic-ui-react";
 import Footer from '../../Component/Main-Component/Footer';
 import Header from '../../Component/Main-Component/Header';
-import { useHistory, useParams } from 'react-router-dom';
+import { Link, useHistory, useParams } from 'react-router-dom';
 import Crumb from '../../Component/Main-Component/Crumb';
 import '../../Sass/Sass-Main/_About.scss';
 const Company = () => {
@@ -24,7 +24,6 @@ const Company = () => {
       description: services.data.description,
       slug: services.data.slug,
       serviceHowToApply: services.data.serviceDetail.serviceHowToApply,
-      image: services.data.serviceDetail.image[0],
       reqDocs: services.data.serviceDetail.reqDocs,
       overview: services.data.serviceDetail.overview,
       processT: services.data.serviceDetail.processT,
@@ -36,57 +35,58 @@ const Company = () => {
     setService(serviceData);
   };
 
-  console.log(service);
 
+  if (!service)
+    return (<div></div>)
   return (
     <>
-    <div className="company_wrapper">
-      <Crumb />
-      <div
-        class="company"
-        style={{
-          background: `url(${process.env.PUBLIC_URL + "/Assets/images/contact-bg.png"})`,
-          backgroundSize: "cover"
-        }}
-      >
-        <Container>
-          <h1>{service.name} </h1>
-          <p>
-            {service.description}
-            {/* <br />
+      <div className="company_wrapper">
+        <Crumb />
+        <div
+          class="company"
+          style={{
+            background: `url(${process.env.PUBLIC_URL + "/Assets/images/contact-bg.png"})`,
+            backgroundSize: "cover"
+          }}
+        >
+          <Container>
+            <h1>{service.name} </h1>
+            <p>
+              {service.description}
+              {/* <br />
             veniam. Doloribus officiis minus Lorem ipsum, dolor sit amet
             consectetur adipisicing elit. Sunt, ratione. eius!
             */}
-          </p>
-        </Container>
-      </div>
-      <Container>
+            </p>
+          </Container>
+        </div>
+        <Container>
 
 
-        <div className="overview">
-          <Grid stackable column={2}>
-            <Grid.Column width={11}>
-              <div>
-                <h3>Overview</h3>
-                <p>
-                  {service.overview}
-                </p>
-                <h3>How to Apply</h3>
+          <div className="overview">
+            <Grid doubling column={2}>
+              <Grid.Column width={11}>
+                <div>
+                  <h3>Overview</h3>
+                  <p>
+                    {service.overview}
+                  </p>
+                  <h3>How to Apply</h3>
 
-                {service.serviceHowToApply && service.serviceHowToApply.map((d) =>
-                  <div className="testimonial">
+                  {service.serviceHowToApply && service.serviceHowToApply.map((d) =>
+                    <div className="testimonial">
 
-                    <img src={process.env.PUBLIC_URL + '/Assets/images/pinpoint.png'} />
+                      <img src={process.env.PUBLIC_URL + '/Assets/images/pinpoint.png'} />
 
-                    <p>
-                      {d}
-                    </p>
+                      <p>
+                        {d}
+                      </p>
 
-                  </div>
+                    </div>
 
-                )}
+                  )}
 
-                {/*
+                  {/*
               <div className="testimonial">
                 <img src={process.env.PUBLIC_URL + '/Assets/images/pinpoint.png'} />;
                 <p>
@@ -121,17 +121,17 @@ const Company = () => {
               </div>
               
               */}
-                
-                <h3>Documents Required</h3>
 
-                {service.reqDocs && service.reqDocs.map((d) =>
-                  <div className="testimonial">
-                    <img src={process.env.PUBLIC_URL + "/Assets/images/pinpoint.png"} />
-                    <p>{d}</p>
-                  </div>
-                )}
+                  <h3>Documents Required</h3>
 
-                {/*
+                  {service.reqDocs && service.reqDocs.map((d) =>
+                    <div className="testimonial">
+                      <img src={process.env.PUBLIC_URL + "/Assets/images/pinpoint.png"} />
+                      <p>{d}</p>
+                    </div>
+                  )}
+
+                  {/*
               <div className="testimonial">
               <img src={process.env.PUBLIC_URL + '/Assets/images/pinpoint.png'} />
                 <p>Lorem Ipsum is simply dummy text of the printing </p>
@@ -149,56 +149,56 @@ const Company = () => {
                 <p>Lorem Ipsum is simply dummy text of the printing </p>
               </div>
               */}
-              </div>
-            </Grid.Column>
+                </div>
+              </Grid.Column>
 
-            <Grid.Column width={5}>
-              <div className="company_plans">
-              <div className="tourist" style={{ margin: '0' }}>
-                <Grid>
-                  <Grid.Row>
-                    <Grid.Column>
-                      <div className="tourist-border">
-                        <div className="hours">
-                          <h3>{service.name}</h3>
-                        </div>
-                        <div className="hours-content">
-                          <div className="rectangle11">
-                            <div className="days-dull">Processing Time:</div>
-                            <div className="days">Upto {service.processT} Days</div>
+              <Grid.Column width={5}>
+                <div className="company_plans">
+                  <div className="tourist" style={{ margin: '0' }}>
+                    <Grid>
+                      <Grid.Row>
+                        <Grid.Column>
+                          <div className="tourist-border">
+                            <div className="hours">
+                              <h3>{service.name}</h3>
+                            </div>
+                            <div className="hours-content">
+                              <div className="rectangle11">
+                                <div className="days-dull">Processing Time:</div>
+                                <div className="days">Upto {service.processT} Days</div>
+                              </div>
+                              <div className="rectangle11">
+                                <div className="days-dull">Stay Period:</div>
+                                <div className="days">{service.stayPeriod} Days</div>
+                              </div>
+                              <div className="rectangle11">
+                                <div className="days-dull">Validity</div>
+                                <div className="days">{service.validity} Days</div>
+                              </div>
+                              <div className="rectangle11">
+                                <div className="days-dull">Entry:</div>
+                                <div className="days">{service.entry}</div>
+                              </div>
+                            </div>
+                            <div className="hours-total">
+                              <div className="fees">
+                                <div className="total-left">Fees</div>
+                                <div className="total-right">{service.price} AED</div>
+                              </div>
+                            </div>
+                            <Link to="/apply"> <button className="form-btn" type="submit">APPLY NOW</button></Link>
                           </div>
-                          <div className="rectangle11">
-                            <div className="days-dull">Stay Period:</div>
-                            <div className="days">{service.stayPeriod} Days</div>
-                          </div>
-                          <div className="rectangle11">
-                            <div className="days-dull">Validity</div>
-                            <div className="days">{service.validity} Days</div>
-                          </div>
-                          <div className="rectangle11">
-                            <div className="days-dull">Entry:</div>
-                            <div className="days">{service.entry}</div>
-                          </div>
-                        </div>
-                        <div className="hours-total">
-                          <div className="fees">
-                            <div className="total-left">Fees</div>
-                            <div className="total-right">{service.price} AED</div>
-                          </div>
-                        </div>
-                        <button className="form-btn" type="submit">APPLY NOW</button>
-                      </div>
-                    </Grid.Column>
-                  </Grid.Row>
-                </Grid>
-              </div>
-              </div>
-            </Grid.Column>
-          </Grid>
-        </div>
+                        </Grid.Column>
+                      </Grid.Row>
+                    </Grid>
+                  </div>
+                </div>
+              </Grid.Column>
+            </Grid>
+          </div>
 
-      </Container>
-      <Footer />
+        </Container>
+        <Footer />
       </div>
     </>
   );

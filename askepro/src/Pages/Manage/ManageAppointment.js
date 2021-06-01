@@ -30,7 +30,7 @@ const ManageAppointments = ({title}) =>{
     
     if(!appointment)
     {return (<div></div>)}
-    console.log(appointment)
+
         return (
           
           <main className='manage-main'>

@@ -59,7 +59,7 @@ const Service_modal = () => {
     formData.append("reqDocs", reqDocs);
     formData.append("serviceHowToApply", serviceHowToApply);
 
-    console.log(...formData);
+
     const result = await (await fetch(url, {
       method: 'POST',
       body: formData

@@ -32,7 +32,7 @@ const FAQ_modal = () => {
       title: faqTitle,
       description: description,
     };
-    console.log(jsonData);
+
     const result = await (
       await fetch(url, {
         method: "POST",

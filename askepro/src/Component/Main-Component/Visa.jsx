@@ -6,14 +6,14 @@ const Visa = () => {
   const service_url = `${process.env.REACT_APP_BASE_URL}/serviceCategory`;
   const history = useHistory();
   const [services, setServices] = React.useState(null);
-console.log(service_url);
+
   React.useEffect(() => {
     getServices();
   }, []);
 
   const getServices = async () => {
     const services = await (await fetch(service_url, { method: "GET" })).json();
-    console.log(services);
+ 
     const serviceData = services.data.map((e) => ({
       _id: e._id,
       name: e.name,

@@ -68,13 +68,13 @@ const About = () => {
           <div className="about_container">
             <h1 className="headingOne">Our Team</h1>
 
-            <Grid stackable columns={2}>
+            <Grid doubling columns={2}>
               <Grid.Column>
                 <div className="space1">
                   <div className="about-card">
                     <div className="column">
                       <div className="team-name">
-                        <h5>Shakeb Khan</h5>
+                        <h5>Agent Name</h5>
                         <p>Chief Executive Office, EPro</p>
                       </div>
                       <div className="team-content">
@@ -89,7 +89,7 @@ const About = () => {
                       <div className="team-image">
                         <img
                           src={
-                            process.env.PUBLIC_URL + "/Assets/images/team.png"
+                            process.env.PUBLIC_URL + "/Assets/images/team.svg"
                           }
                         />
                       </div>
@@ -102,7 +102,7 @@ const About = () => {
                   <div className="about-card">
                     <div className="column">
                       <div className="team-name">
-                        <h5>Shakeb Khan</h5>
+                        <h5>Agent Name</h5>
                         <p>Chief Executive Office, EPro</p>
                       </div>
                       <div className="team-content">
@@ -117,7 +117,7 @@ const About = () => {
                       <div className="team-image">
                         <img
                           src={
-                            process.env.PUBLIC_URL + "/Assets/images/team.png"
+                            process.env.PUBLIC_URL + "/Assets/images/team2.svg"
                           }
                         />
                       </div>

@@ -20,7 +20,7 @@ const BookAppointment = () => {
     const onDateChange =async date => {
         let dates = date.toString();
         dates = dates.split(" ")
-        console.log(dates);
+
         if (window.confirm(`Are you sure you want to select ${dates[1]} ${dates[2]},${dates[3]} as your appointment`)) {
 
             jsonData = {
@@ -40,9 +40,7 @@ const BookAppointment = () => {
             })).json();
 
             history.push("/payment");
-        } else {
-            console.log('Thing was not saved to the database.');
-        }
+        } 
         
     }
 

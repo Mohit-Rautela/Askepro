@@ -47,7 +47,7 @@ export function Nav() {
       })
     ).json();
     user = user.data;
-    console.log(user);
+
     if (user && user.isAdmin) {
       setisAdmin(true);
     }
@@ -59,7 +59,7 @@ export function Nav() {
     history.push("/");
     window.location.reload(false);
   }
-  console.log(name);
+
   return (
     <>
       <header>

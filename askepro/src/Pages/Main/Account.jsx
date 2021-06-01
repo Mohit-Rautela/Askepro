@@ -17,6 +17,7 @@ import { getData } from "../../services/api";
 import "../../Sass/Sass-Main/_About.scss";
 import Edit_user from "../../Component/Main-Component/Edit_user";
 import { useRef } from "react";
+
 const Account = () => {
   const history = useHistory();
   const fileref = useRef();
@@ -81,14 +82,14 @@ const Account = () => {
   const uploadWithFormData = async (event) => {
     const formData = new FormData();
     formData.append("upload", event.target.files[0]);
-    console.log(...formData);
+
     const result = await (
       await fetch(`${process.env.REACT_APP_BASE_URL}/users/upload/${id}`, {
         method: "PUT",
         body: formData,
       })
     ).json();
-    console.log(result);
+
     if (result.status === 1) window.location.reload(false);
   };
   if (!user || !appointment || !application) {

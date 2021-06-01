@@ -28,7 +28,7 @@ const generateLink=async (key)=>{
     'key':  key
   }
   const url = `${process.env.REACT_APP_BASE_URL}/users/download`
-  console.log(url)
+
   const resu =await( await fetch(url, {
       method: 'PUT',
       headers: {
@@ -48,7 +48,7 @@ const handleReject= async (requestId,bool)=>{
   const jsonData = {
     'isRejected':  bool
   }
-  console.log(jsonData)
+
   const url = `${process.env.REACT_APP_BASE_URL}/admin/documents/${requestId}`
   const resu =await( await fetch(url, {
     method: 'PUT',
@@ -66,7 +66,7 @@ const handleReject= async (requestId,bool)=>{
   }
 }
 
-  console.log(request);
+
   const [state, dispatch] = React.useReducer(exampleVerify, {
     open: false,
     size: undefined,

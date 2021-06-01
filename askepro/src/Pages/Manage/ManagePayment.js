@@ -34,7 +34,7 @@ const ManagePayments = ({title}) =>{
         <Table.HeaderCell>Status</Table.HeaderCell>
       </Table.Row>
     </Table.Header>
-    <Table.Body>
+    {/* <Table.Body>
       <Table.Row>
         <Table.Cell>22 June 2020, 12:00</Table.Cell>
         <Table.Cell>BJXCR34</Table.Cell>
@@ -122,7 +122,7 @@ const ManagePayments = ({title}) =>{
         <Table.Cell>350.00</Table.Cell>
         <Table.Cell><StatusChip value="Success"/></Table.Cell>
       </Table.Row>
-    </Table.Body>
+    </Table.Body> */}
  </Table>
 </Container>
 <div className='pagination-container'>

@@ -115,9 +115,8 @@
   right: 130px;
   padding: 30px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
-  @include tablet {
-    margin-top: 30px;
-  }
+  border: solid 1px var(--white);
+
 
   .same-btn {
     line-height: 1.33;
@@ -127,34 +126,22 @@
     color: #000;
     margin: 0;
   }
-  .userName {
+ /*  .userName {
     display: flex;
   }
-  .information .text {
-    padding: 1rem;
-    border-radius: 5px;
-    width: 50%;
-    margin-right: 0.7rem;
-    background-color: red;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
-  }
+
   .email {
     padding: 1rem;
     width: 50%;
     border-radius: 5px;
-  }
-  .placeholder {
+  } */
+ /*  .placeholder {
     margin: 10px 0;
     border-radius: 5px;
     width: 100%;
     padding: 1rem;
-  }
-  .information p {
-    color: #9b9b9b;
-    font-size: 14px;
-    line-height: 3.71;
-    font-family: Helvetica;
-  }
+  } */
+
 
   .reach-Submit {
     display: flex;
@@ -165,7 +152,7 @@
 
   .reach-Submit p {
     color: #9b9b9b;
-    line-height: 1.71;
+    line-height: 3.71;
     font-family: Helvetica;
     font-size: 14px;
     margin-right: 20px;

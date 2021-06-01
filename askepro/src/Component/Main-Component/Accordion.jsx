@@ -14,7 +14,6 @@ export default class AccordionExampleFluid extends Component {
     try {
     let response = await fetch(`${process.env.REACT_APP_BASE_URL}/faqs`);
     const json = await response.json();
-    console.log(json.data);
     this.setState({ data: json.data }); 
     } catch (error) {
       console.log(error);
@@ -29,8 +28,7 @@ export default class AccordionExampleFluid extends Component {
 
   render() {
     const { activeIndex } = this.state;
-    console.log(this.state.activeIndex);
-    console.log(this.state.data)
+
     return (
 
       <>

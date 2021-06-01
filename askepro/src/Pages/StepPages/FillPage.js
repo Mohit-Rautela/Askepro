@@ -26,7 +26,7 @@ function FillPage() {
                 },
             })
         ).json();
-console.log(user);
+
         user = user.data;
 
         setUser(user || []);
@@ -64,7 +64,7 @@ console.log(user);
                 "country": country?country:user.address.country
             }
         }
-        console.log(jsonPostData);
+
         const result = await (await fetch(url, {
             method: 'PUT',
             headers: {
@@ -74,7 +74,7 @@ console.log(user);
             },
             body: JSON.stringify(jsonPostData)
         })).json();
-        console.log(result);
+   
         history.push("/upload");
 
     }

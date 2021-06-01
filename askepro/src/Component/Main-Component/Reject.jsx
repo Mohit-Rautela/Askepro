@@ -29,7 +29,7 @@ const Reject = (id) => {
     size: undefined,
   })
 
-  console.log(id.id)
+
   const handleReject = async (appId) => {
 
     dispatch({ type: 'close' });
@@ -37,7 +37,6 @@ const Reject = (id) => {
       'remarks': msg
     }
     const url = `${process.env.REACT_APP_BASE_URL}/admin/appointment/${appId}`
-    console.log(url)
     const resu = await fetch(url, {
         method: 'PUT',
         headers: {

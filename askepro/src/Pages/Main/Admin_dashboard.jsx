@@ -36,7 +36,7 @@ const Admin_dashboard = () => {
   if (!data) {
     return <div />;
   }
-  console.log(data);
+
   return (
     <main className="manage-main">
       <SideBar value="dashboard" active="active" />
@@ -69,7 +69,7 @@ const Admin_dashboard = () => {
                   <Grid.Column>
                     <div className="clients">
                       <h6>Total Revenue(in AED)</h6>
-                      <h1>1,00,443.45</h1>
+                      <h1>0</h1>
                     </div>
                   </Grid.Column>
                 </Grid.Row>

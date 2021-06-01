@@ -32,7 +32,7 @@ const View_all = () => {
       'key': key
     }
     const url = `${process.env.REACT_APP_BASE_URL}/users/download`
-    console.log(url)
+
     const resu = await (await fetch(url, {
       method: 'PUT',
       headers: {
@@ -46,7 +46,7 @@ const View_all = () => {
   }
   if (!application)
     return (<div />);
-  console.log(application)
+
   return (
     <>
       <main className='manage-main'>

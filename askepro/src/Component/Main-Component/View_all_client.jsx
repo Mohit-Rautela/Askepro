@@ -18,14 +18,14 @@ const View_all = () => {
         },
       })
     ).json();
-    console.log(user);
+ 
     user = user.data;
 
     setUser(user || []);
   }
   if (!user)
     return (<div />);
-    console.log(user)
+
   return (
     <>
       <main className='manage-main'>

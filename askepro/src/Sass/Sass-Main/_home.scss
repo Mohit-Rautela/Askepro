@@ -9,7 +9,7 @@ body {
   max-width: 100%;
 }
 .wrapper_home {
-  background-color: #fff;
+ background: #fff;
 }
 
 .banner3 {
@@ -20,7 +20,7 @@ body {
   margin: 0 auto;
   background-color: #fff;
   bottom: 0rem;
-
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
   .pop_content {
     padding: 5px 0;
   }
@@ -200,32 +200,34 @@ body {
   padding: 0;
 }
 
-.service-card {
+.service-card,
+.service-card2 {
   margin: 5px;
   text-decoration: none;
-  outline: solid 1px #e6e6e6;
+  border: solid 1px #e6e6e6;
   background-color: #ffffff !important;
   cursor: pointer;
   text-align: center;
   width: auto;
   height: 176px;
-  padding: 30px 0;
+  padding: 30px;
   position: relative;
-  
-  /*   border-top: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 5px solid transparent; */
+
+  &:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px var(--white);
+  }
+
   &:hover::after {
     @include hover_after;
   }
   &:hover::before {
     @include hover_before;
   }
-  
+
   p {
     font-family: Open Sans;
-    font-size: 18px;
+    font-size: clamp(8px, 25px, 18px);
     line-height: 1.33;
     margin-top: 20px;
     z-index: 5;
@@ -233,28 +235,19 @@ body {
 }
 
 .service-card2 {
-  display: flex;
-  height: 176px;
-  padding: 55px 40px;
-  outline: solid 1px #e6e6e6;
-  background-color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  &:hover::after {
-    @include hover_after;
-  }
-
-  &:hover::before {
-    @include hover_before;
-  }
   img {
     width: 62.9px;
     height: 63px;
   }
   p {
     font-family: Open Sans;
-    font-size: 24px;
+    font-size: clamp(24px);
     font-weight: normal;
-    margin-left: 30px;
+    padding-left: 1rem;
     line-height: 1.38;
     text-align: left;
     color: #000000;
@@ -270,6 +263,10 @@ body {
   border-radius: 5px;
   height: 226px;
   position: relative;
+  &:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px var(--white);
+  }
   &:hover::before {
     @include hover_before;
   }
@@ -349,7 +346,7 @@ body {
     }
   }
   p {
-    width: 55%;
+    width: clamp(250px, 60%, 100%);
     font-family: Open Sans;
     color: #9d9494;
     line-height: 1.38;
@@ -396,6 +393,10 @@ body {
     background: #fff;
     margin-bottom: 90px;
     position: relative;
+    &:hover {
+      /* outline: ; */
+      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    }
     &:hover::after {
       @include hover_after;
     }
@@ -404,10 +405,7 @@ body {
     }
   }
 
-  .tourist-border:hover {
-    /* outline: ; */
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  }
+
 
   .rectangle11 {
     display: flex;
@@ -575,7 +573,7 @@ body {
   }
   img {
     width: 100%;
-    height: 90vh;
+    height: clamp(50vh, 100%, 100vh);
     object-fit: cover;
   }
 }
@@ -601,6 +599,8 @@ body {
     font-family: Open Sans;
     font-size: 16px;
     padding: 20px 70px 40px 70px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px var(--white);
   }
   .accordion_gap {
     padding: 30px;

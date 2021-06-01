@@ -28,7 +28,7 @@ const Login3 = () => {
         }
         phone = phnumberInt;
       }
-      console.log(jsonPostData)
+
 
       const result = await fetch(url, {
         method: 'POST',

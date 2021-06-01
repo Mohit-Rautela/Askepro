@@ -35,7 +35,7 @@ const DataCard = () => {
         setService(serviceData);
 
     };
-    console.log(service_url);
+
     if(!services){
         return (<div/>)
     }

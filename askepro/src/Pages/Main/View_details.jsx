@@ -13,7 +13,7 @@ const View_details = () => {
 
   React.useEffect(() => { getUser() }, []);
   let { requestId } = useParams();
-  console.log(`${process.env.REACT_APP_BASE_URL}/service/${requestId}`);
+
   const getUser = async () => {
     if (!localStorage.getItem("token") && !localStorage.getItem("id")) { history.push("/login"); }
     else {
@@ -34,7 +34,7 @@ const View_details = () => {
       'key': key
     }
     const url = `${process.env.REACT_APP_BASE_URL}/users/download`
-    console.log(url)
+
     const resu = await (await fetch(url, {
       method: 'PUT',
       headers: {
@@ -57,7 +57,7 @@ const View_details = () => {
   };
 
 
-  console.log(application);
+
   return (
     <>
 
