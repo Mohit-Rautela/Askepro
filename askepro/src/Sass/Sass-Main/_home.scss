@@ -393,9 +393,12 @@ body {
     background: #fff;
     margin-bottom: 90px;
     position: relative;
+    height: 318px;
     &:hover {
       /* outline: ; */
       box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+      border: solid 1px var(--white);
+      
     }
     &:hover::after {
       @include hover_after;

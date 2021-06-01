@@ -144,7 +144,7 @@ $gradient: linear-gradient(251deg, #c7a006, #e7ed32, #c7a006) !important;
   background: rgb(199, 160, 6);
   background: $gradient;
   color: #000;
-  border: 1px solid #c7a006;
+  border: 1px solid transparent;
 }
 /* ///Media query/// */
 
@@ -294,11 +294,15 @@ $gradient: linear-gradient(251deg, #c7a006, #e7ed32, #c7a006) !important;
     width: auto;
   }
   .banner3{
-    width: 90%;
+    width: 100%;
+    .pop_content{
+      width: 30% !important;
+    }
+    .cancel-tab{
+      margin-right: 6.25rem;
+    }
   }
-  .banner3{
-    width: auto;
-  }
+
 
   .user_heading{
     width: 100% !important;
@@ -393,7 +397,7 @@ $gradient: linear-gradient(251deg, #c7a006, #e7ed32, #c7a006) !important;
   }
 
   .same-btn {
-    padding: 5px 10px;
+   
     height: 30px;
     width: 90px;
     font-size: 12px;
