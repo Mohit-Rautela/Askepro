@@ -90,7 +90,7 @@ const ManageQuery = ({ title }) => {
                   <Table.Cell>{ele.email}</Table.Cell>
                   <Table.Cell>{ele.query}</Table.Cell>
                   <Table.Cell>{ele.status}</Table.Cell>
-                  {status === "Open" ? <Table.Cell><Button onClick={() => statusChange(ele._id)}>Mark As Resolved</Button></Table.Cell> : <Table.Cell></Table.Cell>}
+                  {status === "Open" ? <Table.Cell><Button inverted color='green' onClick={() => statusChange(ele._id)}>Mark As Resolved</Button></Table.Cell> : <Table.Cell></Table.Cell>}
                 </Table.Row>)}
               </Table.Body>
             </Table>

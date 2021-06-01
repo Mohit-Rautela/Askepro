@@ -96,7 +96,12 @@
         }
     }
     .view{
-        
+        color: #000;
+        font-weight: bold;
+        text-transform: uppercase;
+        &:hover{
+            text-decoration: underline;
+        }
         a{    
         font-weight: bold;
         text-transform: uppercase !important;
