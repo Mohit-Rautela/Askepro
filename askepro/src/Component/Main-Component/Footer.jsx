@@ -114,7 +114,7 @@ const Footer = () => {
 
             <Grid.Column width={7}>
               <div className="footer-part-2">
-                <p>copyright @ 2020 AskePro</p>
+                <p>copyright © 2020 AskePro</p>
                 <div className="bottom-button">
                   <a href="#" style={{ borderLeft: "none" }}>
                     Site Map

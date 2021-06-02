@@ -10,6 +10,7 @@ body {
 }
 .wrapper_home {
  background: #fff;
+ padding-top: 40px;
 }
 
 .banner3 {
@@ -19,7 +20,8 @@ body {
   max-width: 894px;
   margin: 0 auto;
   background-color: #fff;
-  bottom: 0rem;
+  bottom: 0 !important;
+  z-index: 10;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
   .pop_content {
     padding: 5px 0;
@@ -60,10 +62,11 @@ body {
   padding: 129px 50px 0 50px;
   background: #fff;
   h1 {
+    background: #fff !important;
     &::after {
       @include after;
       height: 9px;
-      margin: 10px 0px 40px 0;
+      margin: 10px 0px 0px 0;
     }
   }
 }
