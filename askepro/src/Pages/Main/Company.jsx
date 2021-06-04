@@ -64,7 +64,7 @@ const Company = () => {
 
 
           <div className="overview">
-            <Grid doubling column={2}>
+            <Grid stackable column={2}>
               <Grid.Column width={11}>
                 <div>
                   <h3>Overview</h3>

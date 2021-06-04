@@ -153,6 +153,11 @@ $gradient: linear-gradient(251deg, #c7a006, #e7ed32, #c7a006) !important;
       position: relative;
       margin: 0 auto;
       top: 2rem;
+      
+    }
+    .reach-Submit{
+      display: block;
+      text-align: center;
     }
   }
   .tourist .hours-content {
@@ -171,7 +176,7 @@ $gradient: linear-gradient(251deg, #c7a006, #e7ed32, #c7a006) !important;
     padding: 50px;
 
     .footer-part-2 {
-      float: right;
+      float: left;
       & a {
         text-align: right !important;
         display: flex;
@@ -185,6 +190,9 @@ $gradient: linear-gradient(251deg, #c7a006, #e7ed32, #c7a006) !important;
         text-align: justify;
       }
     }
+  }
+  .company p{
+    width: 100%;
   }
 }
 
