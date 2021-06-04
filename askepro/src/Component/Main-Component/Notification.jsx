@@ -27,8 +27,8 @@ const Notification = () => {
                </button>
             </div>
             <button className="same-btn" 
-            style={{padding:'0'}}>
-              KNOW MORE 
+            style={{padding:'0'}}><a href="https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-the-covid-19-outbreak/travelling-amid-covid-19/travelling-to-the-uae" target="_blank" rel="regulations">
+              KNOW MORE </a>
             </button>
           </div>  
           

@@ -9,7 +9,7 @@ import Payment from './Pages/StepPages/payment';
 import {Nav} from './Component/Nav/Nav';
 import ManageNav from '../src/Component/Nav/manageNav';
 import Success from './Pages/StepPages/SuccessPage';
-// import Header from './Component/Main-Component/Header';
+
 import History from './Pages/Manage/history';
 import ManageClients from './Pages/Manage/ManageClients';
 import ManagePayments from './Pages/Manage/ManagePayment';
@@ -18,7 +18,7 @@ import ManageService from './Pages/Manage/ManageService';
 import ManageAppointments from './Pages/Manage/ManageAppointment';
 import ManageFaq from './Pages/Manage/ManageFaq';
 import ManageQuery from './Pages/Manage/ManageQuery';
-/* import SideBar from './Component/Nav/Sidebar'; */
+
 import Home from './Pages/Main/Home';
 import ToggleNav from './Component/toggle_nav';
 import Service from './Pages/Main/Service';
@@ -40,7 +40,7 @@ import FAQ_modal from './Component/Main-Component/FAQ_modal';
 import Service_modal from './Component/Main-Component/Add_service_modal';
 import View_all_client from './Component/Main-Component/View_all_client';
 import View_all_application from './Component/Main-Component/View_all_application';
-{/* import Username from './Component/Main-Component/Username'; */}
+  {/* import Username from './Component/Main-Component/Username'; */}
 
 function App() {
   const [token, setToken] =  useState();

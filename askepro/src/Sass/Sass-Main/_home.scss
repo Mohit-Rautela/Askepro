@@ -9,8 +9,8 @@ body {
   max-width: 100%;
 }
 .wrapper_home {
- background: #fff;
- padding-top: 40px;
+  background: #fff;
+  padding-top: 40px;
 }
 
 .banner3 {
@@ -48,6 +48,9 @@ body {
     height: 30%;
     display: block;
     cursor: pointer;
+  }
+  a {
+    color: #000 !important;
   }
 }
 .banner4 {
@@ -397,8 +400,6 @@ body {
     &:hover {
       /* outline: ; */
       box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
-      border: solid 1px var(--white);
-      
     }
     &:hover::after {
       @include hover_after;
@@ -407,8 +408,6 @@ body {
       @include hover_before;
     }
   }
-
-
 
   .rectangle11 {
     display: flex;
