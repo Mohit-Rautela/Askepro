@@ -297,7 +297,7 @@ const Account = () => {
               <div className="user_heading">
                 <h4>Appointments({appointment.count})</h4>
               </div>
-              <Segment className="appointment" style={{ marginTop: "0" }}>
+              {/* <Segment className="appointment" style={{ marginTop: "0" }}> */}
                 {appointment.data.map((ele) => (
                   <div className="appoint">
                     <div className="date">
@@ -314,7 +314,7 @@ const Account = () => {
                     </div>
                   </div>
                 ))}
-              </Segment>
+             {/*  </Segment> */}
               {/*  <Segment>
                 <div className="appoint">
                   <div className="date">

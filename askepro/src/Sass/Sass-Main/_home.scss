@@ -266,6 +266,9 @@ body {
   border-radius: 5px;
   height: 226px;
   position: relative;
+@media only screen and (max-width: 7700px) {
+    padding: 15px;
+  }
   &:hover {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
     border: solid 1px var(--white);

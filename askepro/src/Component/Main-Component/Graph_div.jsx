@@ -167,7 +167,7 @@ return}
                   <YAxis />
                   <Tooltip />
                   <Legend />
-                  <Bar dataKey="count" fill="#A2CD5A" />
+                  <Bar dataKey="count" fill="#4285F4" />
                 </BarChart>
               </ResponsiveContainer> : <ResponsiveContainer width="95%" height={400}>
                 <LineChart

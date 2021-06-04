@@ -31,6 +31,7 @@
   background-color: #000;
   width: 100%;
   height: auto;
+
 }
 
 .footer-part-2 {
@@ -135,17 +136,13 @@
     width: 50%;
     border-radius: 5px;
   } */
- /*  .placeholder {
-    margin: 10px 0;
-    border-radius: 5px;
-    width: 100%;
-    padding: 1rem;
-  } */
+ textarea {
+    max-height: 20vh;
+  } 
 
 
   .reach-Submit {
     display: flex;
-
     align-items: center;
     margin-top: 20px;
   }

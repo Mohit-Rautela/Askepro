@@ -145,7 +145,13 @@ $gradient: linear-gradient(251deg, #c7a006, #e7ed32, #c7a006) !important;
   border: 1px solid transparent;
 }
 /* ///Media query/// */
-
+@media (max-width: 1445px) {
+  .footer{
+  .ui.column.grid>[class*="seven wide"].column{
+    width: 100% !important;
+  }
+}
+ }
 @media (max-width: 1039px) {
   .reach {
     width: 100%;
@@ -435,5 +441,8 @@ $gradient: linear-gradient(251deg, #c7a006, #e7ed32, #c7a006) !important;
   .headingOne,
   h1, h2 {
     font-size: 26px !important;
+  }
+  .footer{
+    padding: 15px;
   }
 }
